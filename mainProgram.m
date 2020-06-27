@@ -9,6 +9,7 @@ features=computeBlobworldFeatureVectors(original_image);
  imageSize = [size(original_image, 1) size(original_image, 2)];
  fprintf('buildSegmentation: _Using %d kernel Gaussian MM_\n', 3)
  [mean_vectors, covariance_mats, weights, z] = gaussianMixEmFit(X, 3);
+ choose_max=max(z(:,:));
  em_result=reshape(choose_max,imageSize(1),imageSize(2));
  %mixture weights represent the probability that Xi belongs to the k-th mixture component.
  l_scales=scaleSelection(lab_mat(:,:,1));
