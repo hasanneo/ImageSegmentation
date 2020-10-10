@@ -30,4 +30,5 @@ After the clustering and producing the label matrix and finding the boundaries o
 ![alt text](https://raw.githubusercontent.com/hasanneo/ImageSegmentation/master/images/segmentation.jpg)
 
 After the segmentation, we compute the BlobWorld representation by calculating regions having area larger than 1% of the image
+
 ![alt text](https://raw.githubusercontent.com/hasanneo/ImageSegmentation/master/images/blob.jpg)
