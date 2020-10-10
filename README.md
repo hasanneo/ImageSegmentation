@@ -13,5 +13,5 @@ Fourthly, after computing the scale and BlobWorld features we use the Expectatio
 
 After the clustering we produce a label matrix group_mat having the cluster label for each (x,y) pixel in the original image. After that we solve for region boundaries for the clusters by using boundarymask(label_mat) which is a built-in function in Matlab that finds the region boundaries of the segmentation and it takes a label matrix. We pass this method our group_mat then we show the original image with drawn the boundaries.
 
-#Results
+# Results
 First we present the obtained results of the scaled image after executing scaleSelection and then doing a Gaussian convolution using smoothVariantScale(inimage,scaleMat) . smoothVariantScale is a method that is implemented in our Matlab code that Smooths image 'inimage' using a different smoothing scale for each pixel.
