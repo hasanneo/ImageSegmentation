@@ -16,7 +16,9 @@ After the clustering we produce a label matrix group_mat having the cluster labe
 # Results
 First we present the obtained results of the scaled image after executing scaleSelection and then doing a Gaussian convolution using smoothVariantScale(inimage,scaleMat) . smoothVariantScale is a method that is implemented in our Matlab code that Smooths image 'inimage' using a different smoothing scale for each pixel.
 ![alt text](https://raw.githubusercontent.com/hasanneo/ImageSegmentation/master/images/smoothed.jpg)
+
 Secondly, we show the six components of the color/texture feature vectors. Starting with the smoothed L*a*b* components (from left to right L*a*b*):
 ![alt text](https://raw.githubusercontent.com/hasanneo/ImageSegmentation/master/images/color.jpg)
+
 Then we have the texture features anisotropy polarity and contrast that are calculated using computePolarity(inimage, scale) which takes the L* component of the input image and the scale that we have computed previously . This method returns the polarity of the image that was defined in the paper which was mentioned above and also it return the eigenvalues λ_1>λ_2 which are used to calculate the anisotropy and contrast that were defined in the previous section.
 ![alt text](https://raw.githubusercontent.com/hasanneo/ImageSegmentation/master/images/texture.jpg)
