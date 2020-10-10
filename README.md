@@ -25,3 +25,9 @@ Then we have the texture features anisotropy polarity and contrast that are calc
 
 Finally after passing the features (L*a*b* ,anisotropy,polarity contrast) for Gaussian mixture clustering using EM. The resultant image from the clustering is as follows,
 ![alt text](https://raw.githubusercontent.com/hasanneo/ImageSegmentation/master/images/em.jpg)
+
+After the clustering and producing the label matrix and finding the boundaries of the clusters we will have the following image (original image segmented):
+![alt text](https://raw.githubusercontent.com/hasanneo/ImageSegmentation/master/images/segmentation.jpg)
+
+After the segmentation, we compute the BlobWorld representation by calculating regions having area larger than 1% of the image
+![alt text](https://raw.githubusercontent.com/hasanneo/ImageSegmentation/master/images/blob.jpg)
