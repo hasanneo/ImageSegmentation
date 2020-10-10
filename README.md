@@ -22,3 +22,6 @@ Secondly, we show the six components of the color/texture feature vectors. Start
 
 Then we have the texture features anisotropy polarity and contrast that are calculated using computePolarity(inimage, scale) which takes the L* component of the input image and the scale that we have computed previously . This method returns the polarity of the image that was defined in the paper which was mentioned above and also it return the eigenvalues λ_1>λ_2 which are used to calculate the anisotropy and contrast that were defined in the previous section.
 ![alt text](https://raw.githubusercontent.com/hasanneo/ImageSegmentation/master/images/texture.jpg)
+
+Finally after passing the features (L*a*b* ,anisotropy,polarity contrast) for Gaussian mixture clustering using EM. The resultant image from the clustering is as follows,
+![alt text](https://raw.githubusercontent.com/hasanneo/ImageSegmentation/master/images/em.jpg)
